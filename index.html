@@ -5,27 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&family=Montserrat+Underline:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
   <title>NayBakes</title>
 </head>
 
 <body>
   <header>
     <p class="icon">NAYBAKES</p>
-    <nav>
-      <ul>
+    <nav aria-label="Main Navigation">
+      <ul class="larger-screen menu">
         <li><a href="#">Home</a></li>
         <li><a href="menu.html" target="_blank">Menu</a></li>
         <li><a href="#reviews">Reviews</a></li>
         <li><a href="#">Media</a></li>
         <li><a href="#">Contact</a></li>
-        <li class="search">
-          <a href="#">
-            <img src="./src/free-search-icon-2903-thumb.png" alt="serch-icon" width="30">
-          </a>
-        </li>
+      </ul>
+
+      <button type="button" class="menu-toggle">
+        <img src="src/sourdough-icon.png" alt="menu toggle">
+      </button>
+    <ul class="smaller-screen menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="menu.html" target="_blank">Menu</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -184,7 +192,7 @@
 
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
-  <script type="module" src="index.js"></script>
+  <script type="module" src="./scripts/index.js"></script>
 </body>
 
 </html>

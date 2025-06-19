@@ -46,6 +46,36 @@ a {
   color: black;
 }
 
+.smaller-screen {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 45px;
+  width: 100%;
+  background-color: #c5b89bcc;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 100;
+}
+
+.smaller-screen li {
+  width: 80%;
+  padding: 10px;
+  background: rgba(228, 218, 218, 0.432);
+  text-align: center;
+  margin-bottom: 10px;
+  margin-left: 50px;
+}
+
+.menu-toggle {
+  display: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+.menu-toggle img{
+   width: 60px;
+  }
 .hero {
   position: relative;
   width: 100%;
@@ -57,7 +87,7 @@ a {
 
 .hero-image {
   position: absolute;
-  background-image: url(./src/hero.jpeg);
+  background-image: url(../src/hero.jpeg);
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -81,10 +111,10 @@ a {
   font-weight: 300;
 }
 
-.typed-cursor{
+.typed-cursor {
   opacity: 1;
   animation: blink 0.7s infinite;
-  font-weight: bold;  
+  font-weight: bold;
 }
 
 .category {
@@ -132,7 +162,7 @@ a {
 }
 
 footer {
-  background-color: rgb(59, 58, 58);
+  background-color: rgba(0, 0, 0, 0.699);
   color: white;
   padding: 10px;
   width: 100%;
@@ -177,21 +207,19 @@ footer {
   }
 
   .review {
-    width: 350px;
+    width: 320px;
   }
-   .hero-content h1 {
+
+  .hero-content h1 {
     font-size: 3.5em;
     text-align: center;
   }
 }
 
+
 @media screen and (min-width:460px) and (max-width:700px) {
   body {
     overflow-x: hidden;
-  }
-
-  nav {
-    display: none;
   }
 
   .products {
@@ -220,15 +248,23 @@ footer {
     font-size: 3em;
     text-align: center;
   }
+
+  .larger-screen {
+    display: none;
+  }
+
+  .smaller-screen.opened {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 459px) {
   body {
     overflow-x: hidden;
-  }
-
-  nav {
-    display: none;
   }
 
   .products {
@@ -262,5 +298,23 @@ footer {
   .hero-content h1 {
     font-size: 3em;
     text-align: center;
+  }
+
+  .larger-screen {
+    display: none;
+  }
+
+  .smaller-screen.opened {
+    display: block;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+.menu-toggle img{
+   width: 40px;
+  }
+  .icon{
+    font-size: 20px;
   }
 }

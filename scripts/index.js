@@ -19,4 +19,12 @@ document.addEventListener('DOMContentLoaded', () => {
     autoInsertCss: true,
     contentType: 'html'
   });
+
+  const menuToggle = document.querySelector('.menu-toggle');
+  const smallerScreenMenu = document.querySelector('.smaller-screen')
+
+  menuToggle.addEventListener('click', () => {
+   smallerScreenMenu.classList.toggle('opened');
+
+  })
 });
