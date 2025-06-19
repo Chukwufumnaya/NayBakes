@@ -75,6 +75,10 @@ footer {
   place-items: center;
 }
 
+.footer-item ul li {
+  text-align: center;
+}
+
 .footer-divider {
   border-bottom: 2px solid white;
   margin: 20px;
