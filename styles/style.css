@@ -171,7 +171,7 @@ footer {
 .footer-item {
   display: grid;
   grid-template-columns: repeat(3, auto);
-  place-items: center;
+  align-items: center;
 }
 
 .divider {

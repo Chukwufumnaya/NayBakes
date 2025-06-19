@@ -142,7 +142,6 @@ document.addEventListener('DOMContentLoaded', () => {
   footer.innerHTML += `
       <div class="footer-divider"></div>
       <div class="footer-item">
-        <div>
           <ul>
             <li>
               <h2>Products</h2>
@@ -151,17 +150,14 @@ document.addEventListener('DOMContentLoaded', () => {
             <li>New In</li>
             <li>Weekly Picks</li>
           </ul>
-        </div>
-        <div>
           <ul>
             <li>
               <h2>Info</h2>
             </li>
             <li>About us</li>
             <li>Contact us</li>
+            <li>Our Location</li>
           </ul>
-        </div>
-        <div>
           <ul>
             <li>
               <h2>Socials</h2>
@@ -177,7 +173,6 @@ document.addEventListener('DOMContentLoaded', () => {
               </a>
             </li>
           </ul>
-        </div>
       </div>
   `
 });
