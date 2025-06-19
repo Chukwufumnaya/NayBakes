@@ -1,6 +1,6 @@
 import { menuItems } from "./data.js";
 
-const main = document.querySelector('.main');
+const main = document.querySelector('main');
 
 
 const cookieSection = document.createElement('section');
@@ -145,3 +145,49 @@ menuItems.forEach((item) => {
   }
 
 })
+
+const footer = document.querySelector('footer');
+
+footer.innerHTML += `
+    <div class="footer-divider"></div>
+    <div class="footer-item">
+      <div>
+        <ul>
+          <li>
+            <h2>Products</h2>
+          </li>
+          <li>Menu</li>
+          <li>New In</li>
+          <li>Weekly Picks</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <h2>Info</h2>
+          </li>
+          <li>About us</li>
+          <li>Contact us</li>
+        </ul>
+      </div>
+      <div>
+        <ul>
+          <li>
+            <h2>Socials</h2>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./src/download (1).png" alt="instagram" width="30">
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img src="./src/free-facebook-icon-90-thumb.png" alt="facebook" width="30">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+`
